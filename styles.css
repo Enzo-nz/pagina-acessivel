@@ -19,20 +19,15 @@ section {
     padding-bottom: 5rem;
 }
 
-.nav-img {
-    width: 5%;
-
-}
-
 
 .nav-link {
     color: #CB6D43;
-    font-weight: 70;
+    font-weight: 200;
 }
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/eminem-hip-hop-fans-concert\ \(1\).webp');
+    background-image: url('img/eminem\ show\ plateia.jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -83,8 +78,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/images.jpeg') top right no-repeat,
-        url('img/images.jpeg') bottom left no-repeat;
+    background: url('img/rap.png') top right no-repeat,
+        url('img/rap.png') bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -112,7 +107,7 @@ h2 {
 }
 
 .fundo-galeria {
-    background: url('img/4965007.jpg') bottom right no-repeat;
+    background: url('img/rap.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
