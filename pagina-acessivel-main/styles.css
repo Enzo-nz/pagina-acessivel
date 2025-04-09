@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
+    --laranja-claro: #025686;
+    --alto-contraste-fundo:#000000;
+    --alto-contraste-texto:#ffffff;
+    --alto-contraste-link:#ffd700;
 }
 
 body {
@@ -16,18 +19,22 @@ header {
 
 
 section {
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
+
 
 
 .nav-link {
-    color: #CB6D43;
-    font-weight: 200;
+    color: #580101;
+    font-weight: 600;
 }
 
+.nav-img {
+    width: 50%;
+}
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/eminem\ show\ plateia.jpg');
+    background-image: url('img/Eminem-07-mika.jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -43,7 +50,7 @@ section {
     position: absolute;
     right: 0;
     top: 18rem;
-    width: 45rem;
+    width: 60rem;
     height: auto;
 }
 
@@ -60,16 +67,16 @@ section {
     background-color: var(--laranja-claro);
     border-radius: 30px;
     border: none;
-    width: 14em;
+    width: 16em;
     /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
     /* Convertido para em */
     align-content: center;
-
 }
 
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
+    width: 50rem;
 }
 
 
@@ -102,17 +109,18 @@ h2 {
 }
 
 #galeria {
-    background-color: #FAF4F4;
+    background-color: #f7f8f5;
+    height: 100%;
 
 }
 
 .fundo-galeria {
-    background: url('img/rap.png') bottom right no-repeat;
+    background: url('') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url('');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -131,7 +139,7 @@ h2 {
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: #036629;
     border: none;
     font-weight: bold;
 }
@@ -139,4 +147,68 @@ h2 {
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
+}
+
+.menu-acessibilidade{
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.opcoes-acessebilidade button{
+    margin-bottom: 5px;
+}
+
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste.nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste.botao-inicio,
+.alto-contraste.fomrulario button,
+.alto-contraste.btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste #tropicalia{
+    background: none;
+}
+
+.alto-contraste #galeria{
+    background-color: var(--alto-contraste-fundo);
+
+}
+
+.alto-contraste.fundo-galeria{
+    background: none;
 }
